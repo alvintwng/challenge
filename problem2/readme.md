@@ -10,8 +10,6 @@ You are planning a big programming conference and have received many proposals w
 - All talk lengths are either in minutes (not hours) or lightning (5 minutes).
 - Presenters will be very punctual; there needs to be no gap between talks.
 
-Note that depending on how you choose to complete this problem, your solution may give a different ordering or combination of talks into tracks. This is acceptable; you don't need to exactly duplicate the sample output given here.
-
 Test input:
 
 ```
@@ -67,9 +65,47 @@ Track 2:
 04:00PM Rails for Python Developers lightning
 04:05PM Networking Event
 ```
+---
+---
 
-----
+This application outputs with three different schedules, ie 
+* Unsorted Schedule,
+* Evenly distributed to sessions Schedule, and
+* Finished-by-Noon schedule. 
 
+Data, start application, at `test/.../Problem2ApplicationTests.java`.
+as well as the output results commented. 
+
+#### Problem2ApplicationTests.java
+``` java
+	@Test
+	public void prinInput() {
+		prinInput(talks());
+
+		var event = new Event(talks());
+		
+		System.out.println("\n*** Schedule Unsort ***");
+		event.scheduleUnsortedOutput();
+
+		System.out.println("\n*** Schedule Rotate Distributing ***");
+		event = new Event(talks());
+		event.scheduleRotateOutput();
+		
+		System.out.println("\n*** Schedule MustFinishedByNoon ***");
+		event = new Event(talks());
+		event.scheduleMustFinishedByNoon();	
+		
+		System.out.println("");
+	}
+	
+	private static ArrayList<Talk> talks() {
+		Talk[] talkArray = {
+				new Talk( "Writing Fast Tests Against Enterprise Rails 60min", 60 ),
+				new Talk( "Overdoing it in Python 45min",45 ),
+				...
+```
+The following are three main objects for Finished-By-Noon output:
+#### Event.java
 ``` java
 public class Event {
 	private static ArrayList<Talk> talks;
@@ -105,6 +141,7 @@ public class Event {
 		printout(allTracks);
 	}
 ```
+#### Track.java
 ``` java
 public class Track {
 	private int TrackNo;
@@ -131,6 +168,7 @@ public class Track {
 		return allTracks;
 	}
 ```
+#### Session
 ``` java
 public class Session {
 
