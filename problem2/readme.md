@@ -66,7 +66,7 @@ Track 2:
 04:05PM Networking Event
 ```
 ---
-![image](img/210527TrackMngt.png)
+![image](src/main/resources/img/210527TrackMngt.png)
 
 ---
 
