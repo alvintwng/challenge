@@ -1,4 +1,4 @@
-##### Problem Two: Conference Track Management
+### Problem Two: Conference Track Management
  
 You are planning a big programming conference and have received many proposals which have passed the initial screen process but you're having trouble fitting them into the time constraints of the day -- there are so many possibilities! So you write a program to do it for you.
 - The conference has multiple tracks each of which has a morning and afternoon session.
@@ -66,19 +66,21 @@ Track 2:
 04:05PM Networking Event
 ```
 ---
-![image](src/main/resources/img/210527TrackMngt.png)
-
 ---
+![image](src/main/resources/img/210527TrackMngt.png)
 
 This application outputs with three different schedules, ie 
 * Unsorted Schedule,
 * Evenly distributed to sessions Schedule, and
 * Finished-by-Noon schedule. 
 
-Data, start application, at [`test/.../Problem2ApplicationTests.java`](/problem2/src/test/java/problem2/Problem2ApplicationTests.java).
-as well as the output results commented. 
+### JUnit Test
+Application execute by run the *test* with data.
 
-#### Problem2ApplicationTests.java
+Data, outputs shown at [`test/.../Problem2ApplicationTests.java`](/problem2/src/test/java/problem2/Problem2ApplicationTests.java).
+
+
+### Problem2ApplicationTests.java
 ``` java
 	@Test
 	public void prinInput() {
@@ -107,7 +109,7 @@ as well as the output results commented.
 				...
 ```
 The following are three main objects for Finished-By-Noon output:
-#### Event.java
+### Event.java
 ``` java
 public class Event {
 	private static ArrayList<Talk> talks;
@@ -143,7 +145,7 @@ public class Event {
 		printout(allTracks);
 	}
 ```
-#### Track.java
+### Track.java
 ``` java
 public class Track {
 	private int TrackNo;
@@ -170,7 +172,7 @@ public class Track {
 		return allTracks;
 	}
 ```
-#### Session
+### Session.java
 ``` java
 public class Session {
 
