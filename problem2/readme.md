@@ -73,7 +73,7 @@ This application outputs with three different schedules, ie
 * Evenly distributed to sessions Schedule, and
 * Finished-by-Noon schedule. 
 
-Data, start application, at `test/.../Problem2ApplicationTests.java`.
+Data, start application, at [`test/.../Problem2ApplicationTests.java`](/problem2/src/test/java/problem2/Problem2ApplicationTests.java).
 as well as the output results commented. 
 
 #### Problem2ApplicationTests.java
