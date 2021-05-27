@@ -66,6 +66,8 @@ Track 2:
 04:05PM Networking Event
 ```
 ---
+![image](img/210527TrackMngt.png)
+
 ---
 
 This application outputs with three different schedules, ie 
