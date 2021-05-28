@@ -67,6 +67,10 @@ Track 2:
 ```
 ---
 ---
+### Class Diagramn
+![image](src/main/resources/img/210528ClassDia.png)
+)
+### ScreenShot
 ![image](src/main/resources/img/210527TrackMngt.png)
 
 This application outputs with three different schedules, ie 
