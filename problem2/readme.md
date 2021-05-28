@@ -67,9 +67,9 @@ Track 2:
 ```
 ---
 ---
-### Class Diagramn
+### Class Diagram
 ![image](src/main/resources/img/210528ClassDia.png)
-)
+
 ### ScreenShot
 ![image](src/main/resources/img/210527TrackMngt.png)
 
