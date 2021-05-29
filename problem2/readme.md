@@ -135,7 +135,7 @@ public class Event {
 		
 		var sessSorting = new Session(talks);
 		
-		// sort on morning session, must before noon
+		// sort talks on morning session, finished before or at noon
 		for (var tk: allTracks) {
 			Session sessAm = tk.getAm();
 			sessAm = sessSorting.selectionSort(sessSorting.getTalks(), sessAm);
