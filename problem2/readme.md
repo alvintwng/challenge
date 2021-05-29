@@ -70,8 +70,8 @@ Track 2:
 ### Class Diagram
 ![image](src/main/resources/img/210528ClassDia.png)
 
-### Sequence Diagram for event.ScheduleMustFinsihByNoon
-Morning session must finished by noon, for lunch.
+### Sequence Diagram for Event.scheduleMustFinsihByNoon
+Morning session schedule sorted to finished by noon, for lunch.
 ![image](src/main/resources/img/210530ScheduleMustFinishByNoon.jpg)
 
 ### ScreenShot
