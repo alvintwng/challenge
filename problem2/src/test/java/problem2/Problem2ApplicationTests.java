@@ -22,7 +22,7 @@ class Problem2ApplicationTests {
 		event = new Event(talks());
 		event.scheduleRotateOutput();
 		
-		System.out.println("\n*** Schedule MustFinishedByNoon ***");
+		System.out.println("\n*** AM session MustFinishedByNoon ***");
 		event = new Event(talks());
 		event.scheduleMustFinishedByNoon();	
 		

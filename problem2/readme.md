@@ -103,7 +103,7 @@ Data, outputs shown at [`test/.../Problem2ApplicationTests.java`](/problem2/src/
 		event = new Event(talks());
 		event.scheduleRotateOutput();
 		
-		System.out.println("\n*** Schedule MustFinishedByNoon ***");
+		System.out.println("\n*** AM session MustFinishedByNoon ***");
 		event = new Event(talks());
 		event.scheduleMustFinishedByNoon();	
 		
@@ -116,7 +116,7 @@ Data, outputs shown at [`test/.../Problem2ApplicationTests.java`](/problem2/src/
 				new Talk( "Overdoing it in Python 45min",45 ),
 				...
 ```
-The following are three class objects for Finished-By-Noon output:
+The following are three class objects for AM Finished-By-Noon output:
 ### Event.java
 ``` java
 public class Event {

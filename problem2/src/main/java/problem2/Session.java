@@ -40,6 +40,7 @@ public class Session {
 		this.startTime = parsedDate;
 	}
 	
+	// total duration of talks within this session
 	public int getTotalTime() {
 		int ttime = 0;
 		for (var s : talks) {
@@ -57,34 +58,36 @@ public class Session {
 		}
 	}
 	
-	/* for MustFinishedByNoon, using Selection Sort */ 
-	public Session selectionSort(ArrayList<Talk> tk, Session sess) {
-		var balTalks = new ArrayList<Talk>();
-		var temp = new ArrayList<Talk>();
-		var sessTalks = sess.getTalks();
-		int sessDura = sess.getDuration();
+	/* for ScheduleMustFinishedByNoon, Selection Sort algorithm */ 
+	// talks - talks allocated to be sort; session - to be sort into this empty session
+	public Session selectionSort(ArrayList<Talk> talks, Session session) {
+		var balTalks = new ArrayList<Talk>();	// unselected Talks
+		var temp = new ArrayList<Talk>();	// sorting Talks buffer for UN-selected talk
+		var sessTalks = session.getTalks();	// sorting Talks buffer for Selected talk
+		int sessDura = session.getDuration();	// sort to within this duration
 		
 		do {
 			sessTalks.clear();
 			temp.clear();
 			
-			for (var t : tk) {
-				if ((sess.getTotalTime() + t.getMins() ) <= sessDura) {
+			for (var t : talks) {
+				if ((session.getTotalTime() + t.getMins() ) <= sessDura) {
 					sessTalks.add(t);}
 				else temp.add(t);
 			}
 			
-			if ((sess.getTotalTime() != sessDura) && (temp.size() > 0) ) {
-				balTalks.add(tk.get(0));
-				tk.remove(0);
+			// remove 1st talk from talks, and proceed to next round
+			if ((session.getTotalTime() != sessDura) && (temp.size() > 0) ) {
+				balTalks.add(talks.get(0));
+				talks.remove(0);
 			}
-		} while ((sess.getTotalTime() != sessDura) && (temp.size() > 0) );
+		} while ((session.getTotalTime() != sessDura) && (temp.size() > 0) );
 		
 		for (var t : temp) {
 			balTalks.add(t);
 		}
 		
 		setTalks(balTalks);
-		return sess;
+		return session;
 	}	
 }
