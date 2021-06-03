@@ -88,7 +88,7 @@ Application execute by run the *test* with data.
 Data, outputs shown at [`test/.../Problem2ApplicationTests.java`](/problem2/src/test/java/problem2/Problem2ApplicationTests.java).
 
 ---
-### [Problem2ApplicationTests.java]((/problem2/src/test/java/problem2/Problem2ApplicationTests.java)
+### [Problem2ApplicationTests.java](/problem2/src/test/java/problem2/Problem2ApplicationTests.java)
 ``` java
 	@Test
 	public void prinInput() {
