@@ -88,7 +88,7 @@ Application execute by run the *test* with data.
 Data, outputs shown at [`test/.../Problem2ApplicationTests.java`](/problem2/src/test/java/problem2/Problem2ApplicationTests.java).
 
 ---
-### Problem2ApplicationTests.java
+### [Problem2ApplicationTests.java]((/problem2/src/test/java/problem2/Problem2ApplicationTests.java)
 ``` java
 	@Test
 	public void prinInput() {
@@ -117,7 +117,7 @@ Data, outputs shown at [`test/.../Problem2ApplicationTests.java`](/problem2/src/
 				...
 ```
 The following are three class objects for AM Finished-By-Noon output:
-### Event.java
+### [Event.java](/problem2/src/main/java/problem2/Event.java)
 ``` java
 public class Event {
 	private static ArrayList<Talk> talks;
@@ -153,7 +153,7 @@ public class Event {
 		printout(allTracks);
 	}
 ```
-### Track.java
+### [Track.java](/problem2/src/main/java/problem2/Track.java)
 ``` java
 public class Track {
 	private int TrackNo;
@@ -180,7 +180,7 @@ public class Track {
 		return allTracks;
 	}
 ```
-### Session.java
+### [Session.java](/problem2/src/main/java/problem2/Session.java)
 ``` java
 public class Session {
 
@@ -196,6 +196,11 @@ public class Session {
 		this.talks = talks;
 	}
 	...
+	public void setTalks(ArrayList<Talk> talks) {
+		this.talks = talks;
+	}
+    ...
+
 	/* for ScheduleMustFinishedByNoon, Selection Sort algorithm */ 
 	// talks - talks allocated to be sort; session - to be sort into this empty session
 	public Session selectionSort(ArrayList<Talk> talks, Session session) {
