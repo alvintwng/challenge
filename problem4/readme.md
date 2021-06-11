@@ -1,8 +1,6 @@
-# my challenge
-* H2
-* session
+# problem 4 - quizz
 
-##Lifefitness Coding Challenge
+## Lifefitness Coding Challenge
 
 You are given the task of implementing a simple e-commerce application. You need to develop REST APIs using Spring Boot and assume a client application that will consume the API.
 
