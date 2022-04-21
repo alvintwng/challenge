@@ -123,3 +123,45 @@ Minimum difference for F: 0
 Minimum difference for G: 20
 BUILD SUCCESSFUL (total time: 0 seconds)
  */
+
+ /* CodeCheck Report: 100% 
+Analysis
+Detected time complexity:
+O(N)
+expand allExample tests
+▶ example 
+example test ✔OK
+expand allCorrectness tests
+▶ double 
+two elements ✔OK
+▶ simple_positive 
+simple test with positive numbers, length = 5 ✔OK
+▶ simple_negative 
+simple test with negative numbers, length = 5 ✔OK
+▶ simple_boundary 
+only one element on one of the sides ✔OK
+▶ small_random 
+random small, length = 100 ✔OK
+▶ small_range 
+range sequence, length = ~1,000 ✔OK
+▶ small 
+small elements ✔OK
+expand allPerformance tests
+▶ medium_random1 
+random medium, numbers from 0 to 100, length = ~10,000 ✔OK
+▶ medium_random2 
+random medium, numbers from -1,000 to 50, length = ~10,000 ✔OK
+▶ large_ones 
+large sequence, numbers from -1 to 1, length = ~100,000 ✔OK
+▶ large_random 
+random large, length = ~100,000 ✔OK
+▶ large_sequence 
+large sequence, length = ~100,000 ✔OK
+▶ large_extreme 
+large test with maximal and minimal values, length = ~100,000 ✔OK
+1. 0.232 s OK
+2. 0.240 s OK
+3. 0.192 s OK
+
+ref:  https://app.codility.com/programmers/
+ */

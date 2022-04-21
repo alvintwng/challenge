@@ -63,3 +63,38 @@ no of jumps: 2
 no of jumps: 142730189
 BUILD SUCCESSFUL (total time: 0 seconds)
  */
+
+ /* CodeCheck Report: 100%
+Analysis
+Detected time complexity:
+O(1)
+expand allExample tests
+▶ example 
+example test ✔OK
+expand allCorrectness tests
+▶ simple1 
+simple test ✔OK
+▶ simple2 ✔OK
+▶ extreme_position 
+no jump needed ✔OK
+▶ small_extreme_jump 
+one big jump ✔OK
+collapse allPerformance tests
+▶ many_jump1 
+many jumps, D = 2 ✔OK
+1. 0.004 s OK
+▶ many_jump2 
+many jumps, D = 99 ✔OK
+1. 0.004 s OK
+▶ many_jump3 
+many jumps, D = 1283 ✔OK
+1. 0.008 s OK
+▶ big_extreme_jump 
+maximal number of jumps ✔OK
+1. 0.008 s OK
+▶ small_jumps 
+many small jumps ✔OK
+1. 0.008 s OK
+
+ref:  https://app.codility.com/programmers/
+*/
